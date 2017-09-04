@@ -1,0 +1,572 @@
+@font-face {
+	font-family: 'Gotham Pro- black';
+	src: url('../fonts/GothamPro-Black.eot');
+	src: url('../fonts/GothamPro-Black.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/GothamPro-Black.woff2') format('woff2'),
+		url('../fonts/GothamPro-Black.woff') format('woff'),
+		url('../fonts/GothamPro-Black.ttf') format('truetype'),
+		url('../fonts/GothamPro-Black.svg#GothamPro-Black') format('svg');
+	font-weight: 900;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Gotham Pro medium';
+	src: url('../fonts/GothamPro-Medium.eot');
+	src: url('../fonts/GothamPro-Medium.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/GothamPro-Medium.woff2') format('woff2'),
+		url('../fonts/GothamPro-Medium.woff') format('woff'),
+		url('../fonts/GothamPro-Medium.ttf') format('truetype'),
+		url('../fonts/GothamPro-Medium.svg#GothamPro-Medium') format('svg');
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Gotham Pro bold';
+	src: url('../fonts/GothamPro-Bold.eot');
+	src: url('../fonts/GothamPro-Bold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/GothamPro-Bold.woff2') format('woff2'),
+		url('../fonts/GothamPro-Bold.woff') format('woff'),
+		url('../fonts/GothamPro-Bold.ttf') format('truetype'),
+		url('../fonts/GothamPro-Bold.svg#GothamPro-Bold') format('svg');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@main-bg: #dedede;
+@white: #fff;
+@red: #d25b55;
+@fonts-col: #515151;
+@black: #202020;
+@h-col: #4c4c4c;
+@h3-col: #9fa2a5;
+@card-bg: #595959;
+@bor-col: #a1a1a1;
+@foot-bg: #f9f9f9;
+@sec-2-bg: #f4f4f4;
+@red-btn: #a9252a;
+
+a, a:hover, a:active, a:visited {
+	text-decoration: none;
+}
+
+h2 {
+	font-family: 'Gotham Pro- black', sans-serif;
+	font-size: 80px;
+	line-height: 1.2;
+	text-transform: uppercase;
+	color: @white;
+}
+
+.btn {
+	display: inline-block;
+	width: 172px;
+	height: 52px;
+	text-align: center;
+	border-radius: 26px;
+	color: @white;
+	font-family: 'Gotham Pro bold', sans-serif;
+	font-size: 12px;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+	padding-top: 19px;
+	vertical-align: middle;
+	&:hover {
+		color: @white;
+
+	}
+}
+
+/* первый экран*/
+
+
+header {
+	background-color: @main-bg;
+	text-align: center;
+	h1 {
+	font-family: 'Gotham Pro- black', sans-serif;
+	font-size: 90px;
+	color: @white;
+	text-transform: uppercase;
+	text-align: center;
+	margin-top: 150px;
+	line-height: 1.2em;
+	margin-bottom: 25px;
+    }
+}
+
+.deskr {
+	color: @white;
+	font-style: 14px;
+	font-family: 'Gotham Pro medium', sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	margin: 0;
+	padding: 0;
+	margin-bottom: 27px;
+}
+
+.logo {
+	width: 46px;
+	height: 46px;
+	margin-top: 48px;
+	margin-left: 48px;
+}
+
+.cart {
+	float: right;
+	width: 46px;
+	height: 46px;
+	margin-top: 48px;
+	margin-right: 48px;
+}
+
+.menu {
+	display: block;
+	text-align: center;
+	margin-top: 66px;
+	padding: 0;
+	li {
+		display: inline-block;
+		text-align: center;
+		margin: 0 15px;
+		padding: 0;
+		a {
+			font-size: 14px;
+			color: @white;
+			font-family: 'Gotham Pro Medium', sans-serif;
+			letter-spacing: 4px;
+			position: relative;
+		
+
+		&::after {
+				content: "";
+				position: absolute;
+				display: block;
+				width: 0px;
+				height: 3px;
+				left: -2px;
+				top: 130%;				
+				background-color: @red-btn;
+				-webkit-transition: all 0.5s;
+				-o-transition: all 0.5s;
+				transition: all 0.5s;
+		}
+}
+
+		&:hover {
+			a {
+				color: @red-btn;
+				&::after {
+					width: 100%;
+				}
+			}
+		}
+    }
+} 
+
+.btn-red {
+	background-color: @red;
+}
+
+.btn-white {
+	margin-left: 20px;
+	padding-top: 16px;
+	border: 3px solid @white;
+}
+
+.pens-head {
+	padding-top: 10px;
+	padding-bottom: 65px;
+	min-width: 100%;
+}
+
+
+/* конец первого экрана*/
+/* второй экран*/
+.sec-2 {
+	background: @sec-2-bg url(../images/Pencils.png) 20% 100% no-repeat fixed;
+	margin: 0;
+	padding: 0;
+}
+
+.sec-2-cont {
+    font-family: 'Gotham Pro medium', sans-serif;
+    font-size: 16px;
+    color: @fonts-col;
+    margin-top: 174px;
+    margin-bottom: 139px;
+
+}
+
+/* конец второго экрана  */
+
+/* третий экран  */
+
+.sec-3 {
+	margin: 0;
+	padding: 0;
+	position: relative;
+	text-align: center;
+	background-color: @main-bg;
+	color: @white;
+	padding-bottom: 100px;
+	h2 {
+		padding-top: 1px;
+	}
+	h3 {
+		font-size: 24px;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+		padding-top: 50px;
+		font-family: 'Gotham Pro bold', sans-serif;
+	}
+
+	p {
+		font-size: 21px;
+		font-family: 'Gotham Pro bold', sans-serif;
+		padding-bottom: 20px;
+	}
+}
+
+.col1 {
+	background: url(../images/lamp.png) 50% 65% no-repeat;
+}
+
+.col2 {
+	background: url(../images/F2.png) 50% 60% no-repeat;
+}
+
+.col3 {
+	background: url(../images/f3.png) 50% 40% no-repeat;
+}
+
+
+.bomb {
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+/* конец третьего экрана */
+
+/* четвертый экран */
+
+.sec4 {
+	position: relative;
+	text-align: center;
+	padding-bottom: 50px;
+
+	.img4 {
+		position: absolute;
+		top: -60px;
+		left: 15px;
+	}
+
+	h2 {
+		color: @h-col;
+		margin-bottom: 0;
+		padding-bottom: 0;
+		line-height: 1;
+	}
+	.h3 {
+		margin-top: 0;
+		padding-top: 10px;
+		color: @h3-col;
+		font-family: 'Gotham Pro medium', sans-serif;
+		font-size: 16px;
+		padding-bottom: 50px;
+	}
+
+	
+
+	h3 {
+		color: @black;
+		text-transform: uppercase;
+		letter-spacing: 4px;
+		font-family: 'Gotham Pro- black', sans-serif;
+		font-size: 14px;
+
+	}
+
+	.card {
+        margin-top: 50px;
+		border: 1px solid #fff;
+		border-radius: 5px;
+		p {
+		color: @h3-col;
+		font-size: 14px;
+		font-family: 'Gotham Pro medium', sans-serif;
+	}
+
+
+	.img-wrap {
+		height: 260px;
+		position: relative;
+		img {
+			position: absolute;
+			right: 25px;
+			bottom: 0;
+		}
+
+	}
+
+
+	    .prise {
+		font-family: 'Arvo', serif;
+		font-size: 60px;
+		color: @black;
+		margin: 0;
+		padding: 0;
+		padding-bottom: 24px;
+	}
+
+        &:hover {
+        border: 1px solid #a1a1a1;
+        background-color: @card-bg;
+        .btn-card {
+        background-color: @red;
+}
+        }
+        .btn-card {
+        	margin-bottom: 37px;
+        	height: 47px;
+        	width: 161px;
+        	padding-top: 15px;
+        }
+
+	}
+
+}
+
+/* конец четвёртого экрана */
+
+/* пятый экран */
+
+.sec5 {
+	text-align: center;
+	position: relative;
+
+	h2 {
+		color: @h-col;
+		text-transform: none;
+		font-size: 60px;
+		position: relative;
+		z-index: 300;
+		margin-bottom: 100px;
+	}
+}
+.paper {
+	position: absolute;
+	display: block;
+	margin: auto;
+	padding-left: 50px;
+	top: 50px;	
+	max-width: 100%;	
+}
+
+.form1 {
+	position: relative;
+	text-align: left;
+	margin: auto;
+	margin-bottom: -25px;
+	z-index: 301;
+	display: block;
+	width: 313px;
+	background: url(../images/form-bg.png) 50% 50% no-repeat;
+	.email {
+		vertical-align: middle;
+		margin: 0;
+		padding: 0;
+		margin-top: -px;
+		height: 40px;
+		width: 230px;
+		margin-left: 30px;
+		border: none;
+		padding-left: 20px;
+		font-size: 16px;
+	}
+	.btn-form {
+		background-color: @red;
+		border: none;
+		height: 41px;
+		width: 44px;
+		margin-top: 4px;
+		border-top-right-radius: 5px;
+		border-bottom-right-radius: 5px;
+		color: @white;
+		&:hover {
+			background-color: red;
+		}
+	}
+}
+
+
+
+/* конец пятого экрана */
+
+/* начало футера */
+
+footer {
+	
+	background-color: @foot-bg;
+
+	.row {
+		margin-top: 316px;
+		
+	}
+
+	.social-icon {
+		text-align: right;
+		a {
+			color: @h3-col;
+			&:hover {
+				color: @red;
+			}
+		}
+	}
+
+}
+.banking {
+	margin-top: 20px;
+	margin-bottom: 45px;
+	text-align: right;
+	a {
+		margin-left: 4px;
+	}
+}
+
+.copy {
+    padding-top: 40px;
+}
+
+/* конец футера */
+
+
+/* Large desktops and laptops */
+@media (min-width: 1200px) {
+
+}
+
+/* Portrait tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .bomb {
+    	width: 600px;
+    }
+}
+
+/* Portrait tablets and small desktops */
+@media (max-width: 991px) {
+    .logo {
+    	margin-left: 0px;
+    }
+
+    .cart {
+    	margin-right: 0;
+    }
+
+    .menu li {
+    	margin: 0 10px;
+    	a {
+    		letter-spacing: 1px;
+    	}
+    }
+    header h1 {
+    	font-size: 70px;
+    }
+
+    .sec-2-cont {
+    	background-color: rgba(244, 244, 244, 0.3);
+    	padding: 20px 10px;
+    	border-radius: 5px;
+    }
+    h2 {
+    	font-size: 60px;
+    }
+    .bomb {
+    	width: 500px;
+    }
+
+    .sec4 .img4 {
+         width: 250px;
+         top: -42px;
+    }
+
+    .sec5 h2 {
+    	font-size: 40px;
+    }
+
+    .paper {
+    	top: 20px;
+    	width: 600px;
+    }
+
+    footer .row {
+    	margin-top: 216px;
+    }
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+    header h1 {
+    	font-size: 50px;
+    }
+    h2 {
+    	font-size: 50px;
+    }
+
+    .sec-3 h2 {
+    	padding-top: 70px;
+    }
+    .bomb {
+    	width: 400px;
+    }
+
+    .sec5 h2 {
+    	font-size: 30px;
+    	padding: 0 20;
+    }
+
+    footer .social-icon {
+    	text-align: left;
+    }
+
+    footer .banking {
+    	text-align: left;
+}
+}
+/* Landscape phones and smaller */
+@media (max-width: 500px) {
+    .menu li {
+    	margin: 0 5px;
+    	a {
+    		letter-spacing: 0px;
+    		font-size: 12px;
+    	}
+    }
+
+     header h1 {
+    	font-size: 40px;
+    }
+
+    h2 {
+    	font-size: 35px;
+    }
+    .bomb {
+    	width: 300px;
+    }
+
+    .sec4 .img4 {
+         width: 200px;
+         top: -34px;
+    }
+
+    footer .row {
+    	margin-top: 150px;
+    }
+
+    .paper {
+    	top: 80px;
+    }
+}
