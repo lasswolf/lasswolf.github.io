@@ -290,8 +290,6 @@ header h1 {
 }
 .form1 {
   position: relative;
-  margin: 0;
-  padding: 0;
   text-align: left;
   margin: auto;
   margin-bottom: -25px;
@@ -299,9 +297,20 @@ header h1 {
   display: block;
   height: 49px;
   width: 313px;
-  background: url('../images/form-bg.png') 50% 50% no-repeat;
+  background: url('../images/form-bg.png') 0% 0% no-repeat;
 }
 .form1 .email {
+  vertical-align: middle;
+  margin: 0;
+  padding: 0;
+  height: 44px;
+  width: 230px;
+  margin-left: 30px;
+  border: none;
+  padding-left: 20px;
+  font-size: 16px;
+}
+.email {
   vertical-align: middle;
   margin: 0;
   padding: 0;
@@ -313,7 +322,7 @@ header h1 {
   padding-left: 20px;
   font-size: 16px;
 }
-.form1 .btn-form {
+.btn-form {
   background-color: #d25b55;
   border: none;
   height: 41px;
@@ -324,7 +333,7 @@ header h1 {
   color: #ffffff;
   transition: all 0.5s;
 }
-.form1 .btn-form:hover {
+.btn-form:hover {
   background-color: #a9252a;
   box-shadow: 0 0 7px #a9252a;
 }
