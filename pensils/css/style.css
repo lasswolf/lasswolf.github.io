@@ -395,11 +395,11 @@ footer .social-icon a:hover {
   .bomb {
     width: 500px;
   }
-  .sec4 .img4 {
+  .sec-4 .img-4 {
     width: 250px;
     top: -42px;
   }
-  .sec5 h2 {
+  .sec-5 h2 {
     font-size: 40px;
   }
   .paper {
@@ -419,14 +419,14 @@ footer .social-icon a:hover {
     font-size: 50px;
   }
   .sec-3 h2 {
-    padding-top: 70px;
+    padding-top: 60px;
   }
   .bomb {
     width: 400px;
   }
-  .sec5 h2 {
+  .sec-5 h2 {
     font-size: 30px;
-    padding: 0 20;
+    padding: 0 20px;
   }
   footer .social-icon {
     text-align: left;
@@ -436,12 +436,12 @@ footer .social-icon a:hover {
   }
 }
 /* Landscape phones and smaller */
-@media (max-width: 500px) {
+@media (max-width: 520px) {
   .menu li {
     margin: 0 5px;
   }
   .menu li a {
-    letter-spacing: 0px;
+    letter-spacing: 0;
     font-size: 12px;
   }
   header h1 {
@@ -453,7 +453,7 @@ footer .social-icon a:hover {
   .bomb {
     width: 300px;
   }
-  .sec4 .img4 {
+  .sec-4 .img-4 {
     width: 200px;
     top: -34px;
   }
